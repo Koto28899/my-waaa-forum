@@ -1,0 +1,133 @@
+.button {
+
+  padding: 12px 20px;
+  font-size: larger;
+  font-weight: bolder;
+  border-radius: 14px;
+  border: transparent;
+  background-color: $color-slate-300;
+  cursor: pointer;
+  transition: all .2s;
+  user-select: none;
+
+  &:hover {
+    background-color: $color-slate-400;
+    transform: scale(1.03) translateY(-1px);
+    box-shadow: 2px 4px 6px rgba(0,0,0,.1);
+  }
+
+  &:active {
+    transform: scale(1) translateY(1px);
+  }
+
+  &--avatar {
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    transition: all .2s;
+
+    img {
+      transition: all .2s;
+      margin: auto;
+      border: white 1.1px solid;
+      border-radius: 100%;
+    }
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  &--after-auth {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: transparent;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all .2s;
+
+    span {
+      font-weight: bolder;
+    }
+
+    &:hover {
+      transform: scale(1.2);
+    }
+
+    &:active {
+      transform: scale(1.1);
+    }
+  }
+
+  &--close-popup {
+    font-size: larger;
+    padding: 10px;
+    border-radius: 100%;
+    border: transparent;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  &--login {
+    background-color: white;
+    border-color: transparent;
+    color: black;
+    font-size: larger;
+    font-weight: bolder;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all .2s;
+
+    &:hover {
+      background-color: $color-component-bg-active;
+    }
+  }
+
+  &--register {
+    background-color: white;
+    border: $color-luoTianyi-dark solid 2px;
+    color: $color-luoTianyi-dark;
+    font-size: larger;
+    font-weight: bolder;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all .2s;
+
+    &:hover {
+      background-color: $color-luoTianyi-dark;
+      color: white;
+    }
+  }
+
+  &--logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    transition: all .2s;
+    cursor: pointer;
+
+    &__label {
+      margin-left: 0.6rem;
+      font-size: x-large;
+      font-weight: bolder;
+      background-image: linear-gradient(to right, $color-cherry-blossom-pink 30%, $color-luoTianyi);
+      color: transparent;
+      background-clip: text;
+    }
+
+    &:hover {
+      transform: scale(1.05) translateY(-1px);
+    }
+
+    &:active {
+      transform: translateY(-0.7px);
+    }
+  }
+}

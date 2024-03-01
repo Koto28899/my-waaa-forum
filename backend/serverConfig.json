@@ -1,0 +1,13 @@
+{
+  "dsn": "host=localhost user=root password=1234 dbname=mywaaa port=5432 sslmode=disable TimeZone=Asia/Shanghai",
+  "serverAddress": "localhost:8080",
+  "tokenSymmetricKey": "171086868afa1d657d6f5d8b3afb18a6",
+  "accessTokenDuration": "15m",
+  "sessionDuration": "8640h",
+  "accessControlAllowOrigin": "http://localhost:3001",
+  "accessControlAllowMethods": "GET POST",
+  "accessControlAllowCredentials": "true",
+  "cookieName": "ImNotCookie",
+	"cookiePath": "/",
+	"cookieDomain": "localhost"
+}

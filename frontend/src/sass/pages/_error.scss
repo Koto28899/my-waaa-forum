@@ -1,0 +1,23 @@
+.error {
+  width: 1000px;
+  padding: 250px;
+  margin: 0 auto;
+  
+  h1 {
+    margin-bottom: 60px;
+  }
+
+  p {
+    margin: 10px;
+  }
+
+  span {
+    font-size: large;
+    font-weight: bold;
+    color: red;
+  }
+
+  .button {
+    margin: 40px;
+  }
+}

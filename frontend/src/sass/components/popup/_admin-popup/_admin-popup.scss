@@ -1,0 +1,51 @@
+.admin-popup {
+  position: relative;
+  width: 100%;
+  height: 530px;
+  display: flex;
+  flex-direction: column;
+
+  &__header {
+    padding: 25px 0;
+    height: 65px;
+    text-align: center;
+  }
+
+  .button--close-popup {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+  }
+
+  &__body {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 25px;
+
+    &__select {
+      width: 100%;
+      height: calc(530px - 65px); 
+      padding: 15px;
+      border-radius: 12px;
+      background: $color-slate-100;
+      display: flex;
+      flex-direction: column;
+      overflow-y: auto;
+
+      .button:not(:last-child) {
+        margin-bottom: 12px;
+      }
+    }
+
+    &__form {
+      width: 100%;
+      height: calc(530px - 75px);
+      padding: 15px;
+      border-radius: 12px;
+      background: $color-slate-100;
+    }
+  }
+}
+
+@import "./craete-section";
+@import "./update_role_type";

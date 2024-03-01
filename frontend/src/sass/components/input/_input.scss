@@ -1,0 +1,53 @@
+.input {
+  padding: 12px;
+  background-color: transparent;
+  border-radius: 10px;
+  border: none;
+  border-bottom: transparent 4.4px solid;
+  background-color: $color-slate-300;
+  font-size: 1rem;
+  transition: all .2s;
+
+  &:focus {
+    transform: scale(1.01) translateY(-1px);
+    outline: none;
+    box-shadow: 2px 4px 6px rgba(0,0,0,.1);
+  }
+
+  &:valid {
+    border-bottom: $color-valid-input 4.4px solid;
+  }
+
+  &:not(:placeholder-shown):invalid {
+    border-bottom: $color-invalid-input 4.4px solid;
+  }
+
+  &:placeholder-shown + &-label {
+    transition: all .2s;
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(0rem, 2.1rem);
+  }
+
+  &:not(:placeholder-shown) + &-label {
+    transition: all .2s;
+    transform: translate(-0.2rem, -0.2rem);
+  }
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  padding-top: 24px;
+}
+
+.input-label {
+  position: absolute;
+  display: block;
+  margin-left: 10px;
+  font-size: 1rem;
+  top: 0;
+}
+
+@import "./auto-complete-input";

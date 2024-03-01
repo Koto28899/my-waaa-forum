@@ -1,0 +1,50 @@
+.textarea {
+  font-family: consolas, 微软雅黑;
+  padding: 12px;
+  background-color: transparent;
+  border-radius: 10px;
+  border: none;
+  border-bottom: transparent 4.4px solid;
+  background-color: $color-slate-300;
+  font-size: 1rem;
+  transition: all .2s;
+
+  &:focus {
+    transform: scale(1.01) translateY(-1px);
+    outline: none;
+    box-shadow: 2px 4px 6px rgba(0,0,0,.1);
+
+    border-bottom: $color-luoTianyi-dark 4.4px solid;
+  }
+
+  &:not(:placeholder-shown):invalid {
+    border-bottom: $color-invalid-input 4.4px solid;
+  }
+
+  &:placeholder-shown + &-label {
+    transition: all .2s;
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(0.6rem, 1.9rem);
+  }
+
+  &:not(:placeholder-shown) + &-label {
+    transition: all .2s;
+    transform: translate(0.35rem, -0.5rem);
+  }
+}
+
+.textarea-group {
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  padding-top: 24px;
+}
+
+.input-label {
+  position: absolute;
+  display: block;
+  margin-left: 10px;
+  font-size: 1rem;
+  top: 0;
+}
