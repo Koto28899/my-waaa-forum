@@ -41,6 +41,9 @@ const Input = React.forwardRef(
           width={propsRequired.width}
           onChange={propsRequired.onChange}
 
+          onFocus={propsRequired.onFocus}
+          onBlur={propsRequired.onBlur}
+
           ref={ref}
         />
         <label className="input-label" htmlFor={propsRequired.id}>
