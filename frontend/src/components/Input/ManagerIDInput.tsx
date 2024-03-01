@@ -18,6 +18,12 @@ function ManagerIDInput() {
     element.oninput = function () {
       if (element.value.length > 5) {
         element.value = element.value.slice(0,5);
+        return
+      }
+      if (element.valueAsNumber < 1) {
+        element.valueAsNumber = 1;
+        setInputPlaceHolder("管理员 ID 最小为 1")
+        return
       }
     }
     clearTimeout(timeoutID);
